@@ -138,3 +138,9 @@ This checklist will prepare you launch production-ready vault clusters into any 
 |  |  |
 | --------- | ------- |
 | &#9744;   | <details><summary>Threat Model Exercise </summary> <p> </summary> <p>Conduct a threat modelling exercise using a framework of your organisations choosing and ensure you have documented and mitigated against all identified threats.</p> </details> |
+
+### **Disaster Recovery**
+
+|  |  |
+| --------- | ------- |
+| &#9744;   | <details><summary>DR Excercise </summary> <p> </summary> <p>Conduct a DR excercise to ensure vault can be recovered in case of disaster.</p> </details> |
