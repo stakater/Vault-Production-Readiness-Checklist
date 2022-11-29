@@ -12,7 +12,7 @@ This checklist will prepare you launch production-ready vault clusters into any 
 1. [Operational Readiness](#Operational-Readiness)
 1. [Observability](#Disaster-Recovery)
 1. [Governance and compliance](#Governance-and-compliance)
-
+1. [Disaster Recovery](#disaster-recovery)
 
 ### **Infrastructure Architecture**
 
