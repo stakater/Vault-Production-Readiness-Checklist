@@ -132,7 +132,8 @@ This checklist will prepare you launch production-ready vault clusters into any 
 | &#9744;   | <details><summary>Logs shipping to central logs data warehouse</summary> <p> </summary> <p>Logs should be streamed to a central data warehouse as log rotation on the servers should be enabled and logs will be lost locally. A platform like splunk  is ideal for this use case.  There are other viable options available.</p> </details> |
 | &#9744;   | <details><summary>Logs data mining scripts written.</summary> <p> </summary> <p>Decide the value that the log data should provide and write some scripts to extract this value from the data. Scripts can be written in python.  Models can also be produced to predict future loads based on existing data sets.  This kind of insight can be useful for planning.</p> </details> |
 | &#9744;   | <details><summary>Logs alerting configured</summary> <p> </summary> <p>Some events should generate some kind of alert, for example, a root token being generated should be flagged and alerted on. Ensure these events have alerts configured for them.</p> </details> |
-| &#9744;   | <details><summary>UpDown Alerting</summary> <p> </summary> <p>Setup updown monitoring service which checks periodically the URL you want and reports back any anomaly, be it downtime, bad response, degraded performance or even broken SSL certificate.</p> </details> |
+| &#9744;   | <details><summary>UpDown Alerting</summary> <p> </summary> <p>Configure updown monitoring service which checks periodically the URL you want and reports back any anomaly, be it downtime, bad response, degraded performance or even broken SSL certificate. And publishes alerts in realtime to your alerting system.</p> </details> |
+| &#9744;   | <details><summary>Status Page</summary> <p> </summary> <p>Configure a status page with uptime and performance metrics.</p> </details> |
 
 ### **Governance and compliance**
 
