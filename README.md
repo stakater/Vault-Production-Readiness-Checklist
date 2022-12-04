@@ -46,7 +46,7 @@ This checklist will prepare you launch production-ready vault clusters into any 
 | &#9744;   | <details><summary>Health checks enabled and configured</summary> <p> </summary> <p>Load balancer health probes can be used to ensure that traffic is only routed to a healthy leader node. Configure routing rules according to [these response codes](https://www.vaultproject.io/api/system/health.html) </p> </details> |
 
 
-### **Monitoring & Alerting**
+### **Monitoring and Alerting**
 
 |  |  |
 | --------- | ------- |
