@@ -2,7 +2,6 @@
 This checklist will prepare you launch production-ready vault clusters into any major Cloud provider or on Premise
 
 1. [Infrastructure Architecture](#Infrastructure-Architecture)
-1. [Consul Storage Backend](#Consul-Storage-Backend)
 1. [Load Balancing](#Load-Balancing)
 1. [Monitoring and Alerting](#Monitoring-and-Alerting)
 1. [Configuration Management](#Configuration-Management)
@@ -25,17 +24,6 @@ This checklist will prepare you launch production-ready vault clusters into any 
 | &#9744;   | <details><summary>Firewall rules configured to control access to Vault</summary> <p> Vault will likely contain business critical secrets which makes it a prime target for malicious actors. Access to vault to should be restricted to your private networks and not be accessible on the internet.  The Use of Virtual Private Networks is a commonly used approach to allow access to Vault from unknown networks</p> </details> |
 | &#9744;   | <details><summary>Compute Resouces satisfy the minimum requirements</summary> <p> Ensure Hardware servers and Virtual Machines have been appropriately resources in accordance with the [Deployment System Requirements](https://learn.hashicorp.com/vault/operations/ops-reference-architecture#deployment-system-requirements) </p> </details> |
 | &#9744;   | <details><summary>Secondary Disk</summary> <p>Ensure that vault servers have a secondary disk attached to them. This will help with Audit Device Fault tolerance</p> </details> |
-
-### **Consul Storage Backend**
-
-|  |  |
-| --------- | ------- |
-| &#9744;   | <details><summary>Storage Backend Architecture</summary> <p> </summary> <p>It is a recommended pattern to use [HashiCorp Consul's](https://www.consul.io/) Key/Value store as the storage backend. The reccomended cluster size for consul is 5 nodes.  This cluster size allows for fault tolerance whilst performing maintenence on a a node</p> </details> |
-| &#9744;   | <details><summary>Consul Gossip Encryption configured</summary> <p> Members of the Consul clusters use a gossip protocol to communicate with eachother and hold leadership elections. This network traffic should be encrypted to minimise security risks.  You can read more about consul encryption [here.](https://www.consul.io/docs/agent/encryption.html) </p> </details> |
-| &#9744;   | <details><summary>ACLs</summary> <p>The path that Vault uses in Consul's key/value storage to store it's encrypted data should be protected using Consul's ACL system. Once configured, the Management ACL token should be revoked.  You can read more about configuring Consul's ACL system [here.](https://www.consul.io/docs/acl/index.html)  </p> </details> |
-| &#9744;   | <details><summary>Consul Backups scheduled</summary> <p>As Consul is being used as a data store that Vault uses, it should be considered a stateful service, and as such, should have a backup strategy.  Consul snapshot, in addition to disk backups should be implemented on a regular schedule. For more information about consul snapshot, click [here](https://www.consul.io/docs/commands/snapshot.html)</p> </details> |
-| &#9744;   | <details><summary>Consul Clients installed on Vault Nodes</summary> <p>Vault should not talk directly to Consul backend as this introduces an increased attack vector.  Instead, Consul should be installed on the Vault servers and configured in client mode. The clients will facilitate the communication between Vault and Consul.</p> </details> |
-| &#9744;   | <details><summary>Consul UI enabled (Optional)</summary> <p>If using a 5 node consul cluster, you can choose to enable the UI; however, it is recommended that the UI is enabled on two nodes only.</p> </details> |
 
 ### **Load Balancing**
 
