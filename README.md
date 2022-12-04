@@ -13,6 +13,7 @@ This checklist will prepare you launch production-ready vault clusters into any 
 1. [Observability](#Disaster-Recovery)
 1. [Governance and compliance](#Governance-and-compliance)
 1. [Disaster Recovery](#disaster-recovery)
+1. [Automation Playbooks](#automation-playbooks)
 
 ### **Infrastructure Architecture**
 
@@ -147,3 +148,9 @@ This checklist will prepare you launch production-ready vault clusters into any 
 |  |  |
 | --------- | ------- |
 | &#9744;   | <details><summary>DR Excercise </summary> <p> </summary> <p>Conduct a DR excercise to ensure vault can be recovered in case of disaster.</p> </details> |
+
+### **Automation Playbooks**
+
+|  |  |
+| --------- | ------- |
+| &#9744;   | <details><summary>Automation Playbooks</summary> <p> </summary> <p>Helm Charts and/or operator to deploy the above setup multiple times on different clusters.</p> </details> |
