@@ -50,7 +50,7 @@ This checklist will prepare you launch production-ready vault clusters into any 
 
 |  |  |
 | --------- | ------- |
-| &#9744;   | <details><summary>Infrastructure as code written (Virtual Machines only)</summary> <p> </summary> <p> Code written to deploy the infrastructure Vault. [Terrafrom](https://www.terraform.io/) is an appropriate tool for this task.</p> </details> |
+| &#9744;   | <details><summary>Infrastructure as code written (Containers only)</summary> <p> </summary> <p> Code written to deploy the infrastructure Vault.</p> </details> |
 | &#9744;   | <details><summary>Vault Platform Configuration Code Written</summary> <p> </summary> <p> Vault Platform configuration should be described in code using a tool like [Terrafrom](https://www.terraform.io/).  Configuration such as Auth Methods, Secrets Engines, Audit Devices and Policies should all be configured using code</p> </details> |
 | &#9744;   | <details><summary>Code under Version Control in Source Code Repositories</summary> <p> </summary> <p>All Infrastructure code and application code should be stored separate source control repositories and be placed under version control. An appropriate branching strategy should be implemented and documented in the README file.</p> </details> |
 | &#9744;   | <details><summary>Code Owners in repositories</summary> <p> </summary> <p>Repository files should have code owners assigned to them to control who can approve Pull Requests that will be merged into the Master branch.</p> </details> |
