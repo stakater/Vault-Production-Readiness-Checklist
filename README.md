@@ -77,7 +77,7 @@ This checklist will prepare you launch production-ready vault clusters into any 
 |  |  |
 | --------- | ------- |
 | &#9744;   | <details><summary>Create default policies</summary> <p> </summary> <p>Create default policies that all user entities will inherit according to your business security model.  This could be list permissions on a particular KV path for example.</p> </details> |
-| &#9744;   | <details><summary>Create Policy mappings for default policies</summary> <p> </summary> <p>Create a mapping for default policies to ensure all user entities inherit these policies.</p> </details> |
+| &#9744;   | <details><summary>Create policy mappings for default policies</summary> <p> </summary> <p>Create a mapping for default policies to ensure all user entities inherit these policies.</p> </details> |
 | &#9744;   | <details><summary>Configure aliases for entities when more than one auth method is in use</summary> <p> </summary> <p>Using the Identity Secrets engine, create aliases to attach vault logins via different auth methods to a single entity to ensure the correct policies are inherited and to make the logging data easier to mine</p> </details> |
 | &#9744;   | <details><summary>Design a path structure for KV v2 that matches the way your org works (team based or product/service based)</summary> <p> </summary> <p>Map you KV path design to the way your organisation works or product groupings.</p> </details> |
 | &#9744;   | <details><summary>Meta AppRole process defined</summary> <p> </summary> <p>Meta Approles are a mechanism that allow an application or service to read the secret id of an app role without exposing this to application developers.</p> </details> |
