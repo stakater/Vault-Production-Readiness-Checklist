@@ -13,6 +13,7 @@ This checklist will prepare you launch production-ready vault clusters into any 
 1. [Governance and compliance](#Governance-and-compliance)
 1. [Disaster Recovery](#disaster-recovery)
 1. [Automation Playbooks](#automation-playbooks)
+1. [SLI, SLO and SLA](#sli-slo-sla)
 
 ### **Infrastructure Architecture**
 
@@ -133,3 +134,9 @@ This checklist will prepare you launch production-ready vault clusters into any 
 |  |  |
 | --------- | ------- |
 | &#9744;   | <details><summary>Automation Playbooks</summary> <p> </summary> <p>Helm Charts and/or operator to deploy the above setup multiple times on different clusters.</p> </details> |
+
+### **SLI, SLO and SLA**
+
+|  |  |
+| --------- | ------- |
+| &#9744;   | <details><summary>SLI, SLO and SLA</summary> <p> </summary> <p>Have properly defined SLIs, SLOs and SLAs.</p> </details> |
