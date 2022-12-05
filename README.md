@@ -43,6 +43,7 @@ This checklist will prepare you launch production-ready vault clusters into any 
 | &#9744;   | <details><summary>Vault platform monitoring configured</summary> <p> </summary> <p>Monitoring system of your choice is configured to monitor and alert on vault application metric thresholds as per the [best practice guidance of Hashicorp.](https://s3-us-west-2.amazonaws.com/hashicorp-education/whitepapers/Vault/Vault-Consul-Monitoring-Guide.pdf)</p> </details> |
 | &#9744;   | <details><summary>Infrastructure Monitoring Configured</summary> <p> </summary> <p>Monitoring system of your choice is configured to monitor and alert on consul application metric thresholds as per the [best practice guidance of Hashicorp.](https://s3-us-west-2.amazonaws.com/hashicorp-education/whitepapers/Vault/Vault-Consul-Monitoring-Guide.pdf)</p> </details> |
 | &#9744;   | <details><summary>Monitoring Dashbaord Created</summary> <p> </summary> <p>Using a Dashboard tool a of your choice, create a monitoring dashboard for operations staff to easily identify any issues that may be occurring.</p> </details> |
+| &#9744;   | <details><summary>Prometheus Alerts Configured</summary> <p> </summary> <p>Configure and package prometheus alerts for operations team</p> </details> |
 
 
 ### **Configuration Management**
