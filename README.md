@@ -139,4 +139,4 @@ This checklist will prepare you launch production-ready vault clusters into any 
 
 |  |  |
 | --------- | ------- |
-| &#9744;   | <details><summary>SLI, SLO and SLA</summary> <p> </summary> <p>Have properly defined SLIs, SLOs and SLAs.</p> </details> |
+| &#9744;   | <details><summary>SLIs (service level indicators), SLO (service level objectives) and SLA (service level agreements)</summary> <p> </summary> <p>Have properly defined SLIs, SLOs and SLAs.</p> </details> |
