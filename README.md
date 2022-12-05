@@ -80,8 +80,8 @@ This checklist will prepare you launch production-ready vault clusters into any 
 | &#9744;   | <details><summary>Configure aliases for entities when more than one auth method is in use</summary> <p> </summary> <p>Using the Identity Secrets engine, create aliases to attach vault logins via different auth methods to a single entity to ensure the correct policies are inherited and to make the logging data easier to mine</p> </details> |
 | &#9744;   | <details><summary>Design a path structure for KV v2 that matches the way your org works (team based or product/service based)</summary> <p> </summary> <p>Map you KV path design to the way your organisation works or product groupings.</p> </details> |
 | &#9744;   | <details><summary>Meta AppRole process defined</summary> <p> </summary> <p>Meta Approles are a mechanism that allow an application or service to read the secret id of an app role without exposing this to application developers.</p> </details> |
-| &#9744;   | <details><summary>SSO</summary> <p> </summary> <p>Configure SSO for user to authenticate via the company IDP.</p> </details> |
-
+| &#9744;   | <details><summary>SSO for end customer</summary> <p> </summary> <p>Configure SSO for user to authenticate via the company IDP.</p> </details> |
+| &#9744;   | <details><summary>SSO for management team</summary> <p> </summary> <p>Configure SSO for management team via company IDP.</p> </details> |
 
 ### **Security Hardening**
 
