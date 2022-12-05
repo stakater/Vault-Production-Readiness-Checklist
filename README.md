@@ -48,7 +48,7 @@ This checklist will prepare you launch production-ready vault clusters into any 
 
 |  |  |
 | --------- | ------- |
-| &#9744;   | <details><summary>Infrastructure as code written (Virtual Machines only)</summary> <p> </summary> <p> Code written to deploy the infrastructure for Consul and Vault. [Terrafrom](https://www.terraform.io/) is an appropriate tool for this task.  Virtual Machine images created from code for Consul and Vault. Packer is a good choice of tool for this. All Virtual infrastructure should be deployed and managed using an Infrastructure as code tool</p> </details> |
+| &#9744;   | <details><summary>Infrastructure as code written (Virtual Machines only)</summary> <p> </summary> <p> Code written to deploy the infrastructure Vault. [Terrafrom](https://www.terraform.io/) is an appropriate tool for this task.</p> </details> |
 | &#9744;   | <details><summary>Vault Platform Configuration Code Written</summary> <p> </summary> <p> Vault Platform configuration should be described in code using a tool like [Terrafrom](https://www.terraform.io/).  Configuration such as Auth Methods, Secrets Engines, Audit Devices and Policies should all be configured using code</p> </details> |
 | &#9744;   | <details><summary>Code under Version Control in Source Code Repositories</summary> <p> </summary> <p>All Infrastructure code and application code should be stored separate source control repositories and be placed under version control. An appropriate branching strategy should be implemented and documented in the README file.</p> </details> |
 | &#9744;   | <details><summary>Code Owners in repositories</summary> <p> </summary> <p>Repository files should have code owners assigned to them to control who can approve Pull Requests that will be merged into the Master branch.</p> </details> |
@@ -90,7 +90,7 @@ This checklist will prepare you launch production-ready vault clusters into any 
 | &#9744;   | <details><summary>Enable and configure SELinux / App Armour</summary> <p> </summary> <p>Enable and config SELinux / app amour depending on your operating system to create sandboxed contexts to  reduce blast radius if even the system is compromised.</p> </details> |
 | &#9744;   | <details><summary>Randomise the ports used to differ from standard ports for Vault</summary> <p> </summary> <p>By default, Vault uses port 8200 and 8201. Change the port to a non-standard port to provide extra hardening</p> </details> |
 | &#9744;   | <details><summary>Revoke root token</summary> <p> </summary> <p>Once initial set-up of Vault cluster has been completed, the root token should be revoked.</p> </details> |
-| &#9744;   | <details><summary>Configure server firewalls to only allow access to required ports.</summary> <p> </summary> <p>Using firewalld or IP Tables, configure these firewalls to limit port access to the vault and consul servers.</p> </details> |
+| &#9744;   | <details><summary>Configure server firewalls to only allow access to required ports.</summary> <p> </summary> <p>Using firewalld or IP Tables, configure these firewalls to limit port access to the vault servers.</p> </details> |
 | &#9744;   | <details><summary>Disable SSH</summary> <p> </summary> <p>Interaction with Vault is done via the API, even when using the CLI.  As such, there is no reason to have to SSH on to a vault server (if it’s a virtual machine) so SSH should be disabled to mitigate the risk of unauthorised access to the server.</p> </details> |
 
 
@@ -100,7 +100,7 @@ This checklist will prepare you launch production-ready vault clusters into any 
 | --------- | ------- |
 | &#9744;   | <details><summary>Configure auto-unseal</summary> <p> </summary> <p>Add a seal stanza to the Vault config file to reduce operational burden on operators. For more information check the [auto-unseal documentation here](https://www.vaultproject.io/docs/concepts/seal/#auto-unseal)</p> </details> |
 | &#9744;   | <details><summary>PGP encryption of unseal/recovery keys</summary> <p> </summary> <p>Use PGP or Keybase to add an extra layer of security to the distribution of unseal/recovery keys. For more details, see the [official documentation here](https://www.vaultproject.io/docs/concepts/pgp-gpg-keybase/)</p> </details> |
-| &#9744;   | <details><summary>Node rebuild practice run</summary> <p> </summary> <p>Practice building and replacing a node in the vault and consul clusters with zero downtime.</p> </details> |
+| &#9744;   | <details><summary>Node rebuild practice run</summary> <p> </summary> <p>Practice building and replacing a node in the vault clusters with zero downtime.</p> </details> |
 | &#9744;   | <details><summary>Vault upgrade practice run</summary> <p> </summary> <p>Practice upgrading Vault binaries to newer versions with zero downtime.</p> </details> |
 | &#9744;   | <details><summary>Load testing</summary> <p> </summary> <p>Consuct load testing to ensure your infrastructure compute resources are sufficient for the load you are expecting. There are projects like [wrk](https://github.com/wg/wrk) That can assist with generating traffic.</p> </details> |
 | &#9744;   | <details><summary>Document key holders and contact details</summary> <p> </summary> <p>Ensure unseal/recovery key holders are documented on a Wiki and this document is kept up-to-date</p> </details> |
