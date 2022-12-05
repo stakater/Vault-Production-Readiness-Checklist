@@ -105,8 +105,6 @@ This checklist will prepare you launch production-ready vault clusters into any 
 | &#9744;   | <details><summary>Load testing</summary> <p> </summary> <p>Consuct load testing to ensure your infrastructure compute resources are sufficient for the load you are expecting. There are projects like [wrk](https://github.com/wg/wrk) That can assist with generating traffic.</p> </details> |
 | &#9744;   | <details><summary>Document key holders and contact details</summary> <p> </summary> <p>Ensure unseal/recovery key holders are documented on a Wiki and this document is kept up-to-date</p> </details> |
 | &#9744;   | <details><summary>Trusted Broker/Platform pattern</summary> <p> </summary> <p>Choose a platform or broker that your business trusts and use this for secure injection of initial secrets. Examples are using Azure as a trusted platform or using Jenkins as a trusted broker.  Each organisation will differ with regards to what they trust so this should be a business driven decision.</p> </details> |
-| &#9744;   | <details><summary>OS Patching strategy</summary> <p> </summary> <p>Document an implement an OS patching strategy, whether it’s updating VM images and replacing VMs with up-to-date images or whether its a controlled direct access update by an operator.</p> </details> |
-
 
 ### **Observability**
 
