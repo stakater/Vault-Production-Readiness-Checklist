@@ -1,4 +1,5 @@
 # Vault Production Readiness Checklist
+
 This checklist will prepare you launch production-ready vault clusters into any major Cloud provider or on Premise
 
 1. [Infrastructure Architecture](#Infrastructure-Architecture)
@@ -14,6 +15,10 @@ This checklist will prepare you launch production-ready vault clusters into any 
 1. [Disaster Recovery](#disaster-recovery)
 1. [Automation Playbooks](#automation-playbooks)
 1. [SLI, SLO and SLA](#sli-slo-sla)
+
+### References
+
+[Adopting Hashicorp Vault](https://www.hashicorp.com/resources/adopting-hashicorp-vault)
 
 ### **Infrastructure Architecture**
 
