@@ -156,3 +156,12 @@ This checklist will prepare you launch production-ready vault clusters into any 
 | &#9744;   | <details><summary>Storage Key Rotation</summary> <p> </summary> <p>The Storage Key encrypts every secret that is stored in Vault, and only lives unencrypted in memory. This key can be rotated online by simply sending a call to the right API endpoint, or from the CLI. This requires the right privileges as set on the policy. From the point in time of rotating the key every new secret gets encrypted with the new key. This is a fairly straightforward process that most organizations carry out every six months, unless there is a compromise.</p> </details> |
 | &#9744;   | <details><summary>Master Key Rotation</summary> <p> </summary> <p>The Master Key wraps the Storage Key, and only lives unencrypted in memory. When using automatic unsealing, the Master Key will be encrypted by the Seal Key, and recovery keys will be provided for certain operations. This process is also online, and causes no disruption, but requires the key holders to input their current shard or recovery key to validate the process, and it's time bound. This procedure is generally carried out by organizations yearly, unless there is a compromise..</p> </details> |
 | &#9744;   | <details><summary>Seal Key Rotation</summary> <p> </summary> <p>...</p> </details> |
+
+### Define Organizational Roles
+
+In most organizations where Vault has been deployed at scale, there is no requirement for extra staffing or hiring. In terms of deploying and running the solution. Vault has no predefined roles and profiles, as the policy system allows very granular definitions of the duties for different teams, but generally speaking these have been defined in most organizations as follows:
+
+- Consumers: Individuals or teams that require the ability to consume secrets or have a need for a namespaced Vault capability.
+- Operators: Individuals or teams who onboard consumers, as well as secret engine capabilities, policies, namespaces and authentication methods.
+- Crypto (Key Officers): Individual or teams who manage key rotation and audit policies
+- Audit: Individual or teams who review and audit usage.
