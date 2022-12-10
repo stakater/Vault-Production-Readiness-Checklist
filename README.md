@@ -15,6 +15,7 @@ This checklist will prepare you launch production-ready vault clusters into any 
 1. [Disaster Recovery](#disaster-recovery)
 1. [Automation Playbooks](#automation-playbooks)
 1. [SLI, SLO and SLA](#sli-slo-sla)
+1. [Keys Rotation](#keys-rotation)
 
 ### References
 
