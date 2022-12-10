@@ -18,7 +18,8 @@ This checklist will prepare you launch production-ready vault clusters into any 
 
 ### References
 
-[Adopting Hashicorp Vault](https://www.hashicorp.com/resources/adopting-hashicorp-vault)
+1. [Adopting Hashicorp Vault](https://www.hashicorp.com/resources/adopting-hashicorp-vault)
+1. [Vault on Kubernetes Reference Architecture](https://developer.hashicorp.com/vault/tutorials/kubernetes/kubernetes-reference-architecture)
 
 ### **Infrastructure Architecture**
 
